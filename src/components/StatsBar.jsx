@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 
 const GITHUB_OWNER = "thangtienql"
-const GITHUB_REPO = "video-gallery"
+const GITHUB_REPO = "videos-landing"
 
 export default function StatsBar() {
   const [count, setCount] = useState(0)

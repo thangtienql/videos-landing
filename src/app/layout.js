@@ -6,7 +6,7 @@ const geist = Geist({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Video Gallery",
-  description: "Tasty video gallery",
+  description: "AI Coding VN video gallery",
 };
 
 export default function RootLayout({ children }) {

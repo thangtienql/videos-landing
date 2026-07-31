@@ -51,7 +51,7 @@ export default function HomePage({ videos, error }) {
             <h1 className="font-bold text-lg leading-none tracking-tight">
               Video Gallery
             </h1>
-            <p className="text-xs text-zinc-500 mt-0.5">Thư viện video Tasty</p>
+            <p className="text-xs text-zinc-500 mt-0.5">AI Coding VN · Video tự động</p>
           </div>
           <SearchBar value={query} onChange={setQuery} />
           <DateFilter value={range} onChange={setRange} />
