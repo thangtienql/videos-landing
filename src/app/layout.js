@@ -11,8 +11,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="vi" className="dark">
-      <body className={`${geist.className} bg-zinc-950 text-zinc-100 min-h-screen antialiased`}>
+    <html lang="vi" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.classList.toggle("dark",t==="dark")}catch(e){document.documentElement.classList.add("dark")}})();`,
+          }}
+        />
+      </head>
+      <body className={`${geist.className} bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 min-h-screen antialiased`}>
         {children}
       </body>
     </html>

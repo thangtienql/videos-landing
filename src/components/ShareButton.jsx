@@ -17,7 +17,7 @@ export default function ShareButton({ url }) {
   return (
     <button
       onClick={copy}
-      className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-800 text-sm font-medium hover:bg-zinc-700 transition-colors"
+      className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-zinc-100 text-sm font-medium hover:bg-zinc-200 transition-colors dark:bg-zinc-800 dark:hover:bg-zinc-700"
     >
       {copied ? (
         <Check className="w-4 h-4 text-green-400" />
