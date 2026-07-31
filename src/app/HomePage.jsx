@@ -40,9 +40,9 @@ export default function HomePage({ videos, error }) {
   );
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-zinc-100">
+    <main className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
       {/* Header */}
-      <header className="sticky top-0 z-40 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/60">
+      <header className="sticky top-0 z-40 backdrop-blur-xl bg-white/80 border-b border-zinc-200 dark:bg-zinc-950/80 dark:border-zinc-800/60">
         <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-3">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg shadow-red-500/20 shrink-0">
@@ -93,7 +93,7 @@ export default function HomePage({ videos, error }) {
               <div className="text-center mt-8">
                 <button
                   onClick={() => setVisible((n) => n + PAGE_SIZE)}
-                  className="px-6 py-2.5 rounded-full bg-zinc-900 border border-zinc-800 text-sm font-medium hover:border-zinc-600 hover:bg-zinc-800 transition-colors"
+                  className="px-6 py-2.5 rounded-full bg-white border border-zinc-300 text-sm font-medium hover:border-zinc-500 hover:bg-zinc-100 transition-colors dark:bg-zinc-900 dark:border-zinc-800 dark:hover:border-zinc-600 dark:hover:bg-zinc-800"
                 >
                   Xem thêm ({filtered.length - visible} video)
                 </button>
@@ -104,8 +104,8 @@ export default function HomePage({ videos, error }) {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800/60 mt-10">
-        <div className="max-w-5xl mx-auto px-4 py-6 text-center text-xs text-zinc-600">
+      <footer className="border-t border-zinc-200 dark:border-zinc-800/60 mt-10">
+        <div className="max-w-5xl mx-auto px-4 py-6 text-center text-xs text-zinc-500 dark:text-zinc-600">
           Video Gallery — made with ❤️
         </div>
       </footer>

@@ -11,7 +11,7 @@ export default function VideoCard({ video, onClick }) {
       onClick={() => onClick(video)}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="group text-left bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-500 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-black/40"
+      className="group text-left bg-white rounded-xl overflow-hidden border border-zinc-200 hover:border-zinc-400 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10 dark:bg-zinc-900 dark:border-zinc-800 dark:hover:border-zinc-500 dark:hover:shadow-black/40"
     >
       <div className="relative aspect-[4/5] bg-zinc-800 overflow-hidden">
         {/* Poster: video tải metadata trước, mute */}

@@ -13,8 +13,8 @@ export default function DateFilter({ dates, value, onChange }) {
           onClick={() => onChange(d === "Tất cả" ? "" : d)}
           className={`px-3.5 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
             (value === "" && d === "Tất cả") || value === d
-              ? "bg-white text-black"
-              : "bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700"
+              ? "bg-zinc-900 text-white dark:bg-white dark:text-black"
+              : "bg-zinc-100 text-zinc-500 hover:text-zinc-900 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-white dark:hover:bg-zinc-700"
           }`}
         >
           {d}

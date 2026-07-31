@@ -25,7 +25,7 @@ export default function StatsBar() {
   }, [])
 
   return (
-    <div className="flex gap-6 text-sm text-zinc-400">
+    <div className="flex gap-6 text-sm text-zinc-500 dark:text-zinc-400">
       <span>{count} video</span>
     </div>
   )
