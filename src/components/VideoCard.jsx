@@ -13,7 +13,7 @@ export default function VideoCard({ video, onClick }) {
       onMouseLeave={() => setHover(false)}
       className="group text-left bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-500 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-black/40"
     >
-      <div className="relative aspect-[9/16] bg-zinc-800 overflow-hidden">
+      <div className="relative aspect-[4/5] bg-zinc-800 overflow-hidden">
         {/* Poster: video tải metadata trước, mute */}
         <video
           src={video.videoUrl}
@@ -51,11 +51,11 @@ export default function VideoCard({ video, onClick }) {
         )}
       </div>
 
-      <div className="p-3">
-        <h3 className="font-semibold text-sm leading-snug line-clamp-2 group-hover:text-white transition-colors">
+      <div className="p-2.5">
+        <h3 className="font-semibold text-[13px] leading-snug line-clamp-1 group-hover:text-white transition-colors">
           {video.title}
         </h3>
-        <p className="text-xs text-zinc-500 mt-1.5">{video.date}</p>
+        <p className="text-[11px] text-zinc-500 mt-1">{video.date}</p>
       </div>
     </button>
   );
