@@ -43,19 +43,23 @@ export default function HomePage({ videos, error }) {
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       {/* Header */}
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/60">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg shadow-red-500/20">
-            <Film className="w-5 h-5 text-white" />
+        <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg shadow-red-500/20 shrink-0">
+              <Film className="w-5 h-5 text-white" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h1 className="font-bold text-lg leading-none tracking-tight">
+                Video Gallery
+              </h1>
+              <p className="text-xs text-zinc-500 mt-0.5">AI Coding VN · Video tự động</p>
+            </div>
+            <ThemeToggle />
           </div>
-          <div className="flex-1 min-w-0">
-            <h1 className="font-bold text-lg leading-none tracking-tight">
-              Video Gallery
-            </h1>
-            <p className="text-xs text-zinc-500 mt-0.5">AI Coding VN · Video tự động</p>
+          <div className="flex items-center gap-2">
+            <SearchBar value={query} onChange={setQuery} />
+            <DateFilter value={range} onChange={setRange} />
           </div>
-          <SearchBar value={query} onChange={setQuery} />
-          <DateFilter value={range} onChange={setRange} />
-          <ThemeToggle />
         </div>
       </header>
 

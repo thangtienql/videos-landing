@@ -8,7 +8,7 @@ export default function SearchBar({ value, onChange }) {
 
   return (
     <div
-      className={`flex items-center gap-2 bg-zinc-900 border rounded-full px-4 py-2 transition-colors w-full max-w-xs ${
+      className={`flex items-center gap-2 bg-zinc-900 border rounded-full px-4 py-2 transition-colors flex-1 min-w-0 ${
         focused ? "border-zinc-500" : "border-zinc-800"
       }`}
     >
