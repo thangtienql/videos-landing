@@ -52,7 +52,7 @@ export default function VideoCard({ video, onClick }) {
       </div>
 
       <div className="p-2.5">
-        <h3 className="font-semibold text-[13px] leading-snug line-clamp-1 group-hover:text-white transition-colors">
+        <h3 className="font-semibold text-[13px] leading-snug line-clamp-1 text-zinc-900 group-hover:text-zinc-900 dark:text-zinc-100 dark:group-hover:text-white transition-colors">
           {video.title}
         </h3>
         <p className="text-[11px] text-zinc-500 mt-1">{video.date}</p>
